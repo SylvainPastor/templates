@@ -1,0 +1,22 @@
+executables:
+{
+    hello = ( helloComponent )
+}
+
+processes:
+{
+    envVars:
+    {
+        LE_LOG_LEVEL = DEBUG
+    }
+
+    run:
+    {
+        ( hello )
+    }
+}
+
+bindings:
+{
+    hello.helloComponent.le_info -> modemService.le_info
+}

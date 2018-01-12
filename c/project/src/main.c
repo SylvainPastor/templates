@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+#include "template.h"
+
+int main(int argc, char **argv)
+{
+    printf("Hello World.\n");
+    return 0;
+}

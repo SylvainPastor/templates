@@ -1,0 +1,4 @@
+*.o
+external
+_build_*
+*.update

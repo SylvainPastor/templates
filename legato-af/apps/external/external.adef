@@ -1,0 +1,19 @@
+sandboxed: true
+
+bundles:
+{
+    file:
+    {
+        [x] external /usr/local/bin/
+
+    }
+}
+
+start: auto
+processes:
+{
+    run:
+    {
+        (external)
+    }
+}

@@ -1,0 +1,12 @@
+sources:
+{
+    hello.c
+}
+
+requires:
+{
+    api:
+    {
+        modemServices/le_info.api
+    }
+}

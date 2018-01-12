@@ -1,0 +1,3 @@
+# Templates
+
+Collection of templates
