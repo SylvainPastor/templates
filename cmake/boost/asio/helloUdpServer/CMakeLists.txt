@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 2.6)
+
+project(helloUdpServer)
+
+FIND_PACKAGE(Boost REQUIRED COMPONENTS thread)
+IF(Boost_FOUND)
+	INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIRS})
+	LINK_DIRECTORIES(${Boost_LIBRARY_DIRS})
+ENDIF(Boost_FOUND)
+
+add_executable(${PROJECT_NAME} 
+	${PROJECT_NAME}.cpp
+)
+
+TARGET_LINK_LIBRARIES(${PROJECT_NAME}
+	${Boost_THREAD_LIBRARY}
+)
